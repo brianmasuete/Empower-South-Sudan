@@ -32,6 +32,199 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <style>
+    .service_section {
+      padding: 90px 0;
+      background: #f8f9fa;
+    }
+
+    .service_container {
+      position: relative;
+    }
+
+    .heading_container {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .heading_container h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      position: relative;
+      padding-bottom: 15px;
+    }
+
+    .heading_container h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: #007bff;
+    }
+
+    .heading_container h4 {
+      font-size: 1.5rem;
+      color: #34495e;
+      margin: 30px 0 15px;
+    }
+
+    .heading_container p {
+      color: #666;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: justify;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 40px;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
+    .box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 35px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .detail-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .detail-box h5 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #007bff;
+      text-align: center;
+    }
+
+    .detail-box p {
+      color: #666;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      flex: 1;
+      text-align: justify;
+    }
+
+    .detail-box ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .detail-box ul li {
+      margin-bottom: 10px;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .detail-box ul ul {
+      margin-top: 10px;
+    }
+
+    .detail-box b {
+      color: #2c3e50;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 1400px) {
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 992px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .heading_container h2 {
+        font-size: 2rem;
+      }
+      
+      .box {
+        padding: 25px;
+      }
+    }
+
+    /* Footer styling */
+    .footer_section {
+      background: #2c3e50;
+      color: #fff;
+      padding: 60px 0 30px;
+    }
+
+    .footer_section .footer-about {
+      margin-bottom: 30px;
+    }
+
+    .footer_section .sitename {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .footer_section .footer-contact p {
+      margin-bottom: 10px;
+      color: #ecf0f1;
+    }
+
+    .footer_section .footer-links h4 {
+      color: #fff;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+
+    .footer_section .footer-links ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer_section .footer-links ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .footer_section .footer-links ul li a:hover {
+      color: #007bff;
+      padding-left: 5px;
+    }
+
+    .footer_section .copyright {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+  </style>
 </head>
 
 <body class="sub_page">
@@ -109,139 +302,59 @@ change, education, gender, and WASH.
             contexts. Our core program services include:   
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <div class="box ">
-             
-              <div class="detail-box">
-                <h5>
-                  HEALTH
-                </h5>
-                <p>
-                 <ul>
-                  <li>
-                    At Empower South Sudan, improving the health of the youth and 
-                    vulnerable adolescent girls and young women, men and children is core to 
-                    our mission. We believe that a good health for a household provides the 
-                    foundation for community economic empowerment and development. We 
-                    aspire to deliver and provide basic primary, secondary and tertiary healthcare, 
-                    comprehensive HIV/AIDS prevention, care and treatment, family planning 
-                    and sexual reproductive health services using our innovative approaches 
-                    tailored to local contexts and what people need to be healthy and to 
-                    generate the evidence needed to address their health challenges. 
-                  </li>
-                  <li>
-                    Empower SS work with Ministry of Health and other stakeholders to 
-                    addresses emerging pandemics and epidemics with local expertise and 
-                    supports State and County Health Departments in improving epidemic 
-                    preparedness, detection, and response. Our local approaches incorporate 
-                    digital health innovations and use cutting-edge behavioral, epidemiological, 
-                    and existing clinical research sciences to understand, prevent and contain 
-                    these emerging threats.  
-                    <br><b>Our cross-cutting capabilities in healthcare and control of pandemic threats 
-                      include: </b>
-                    <ul>
-                      <li>Focused primary healthcare services</li>
-                      <li>HIV/AIDS prevention, care & treatment services </li>
-                      <li>Family planning and sexual reproductive health services</li>
-                      <li>Social behavior change, risk communications and social 
-                        marketing </li>
-                      <li>Food security and emergency nutrition</li>
-                      <li>Water, sanitation, and hygiene (WASH) </li>
-                      <li>Community-led monitoring.</li>
-                    </ul>
-                  </li>
-                 </ul>
-                </p>
-                <a href="#">
-                  Read More
-                </a>
-              </div>
+        <div class="services-grid">
+          <div class="box">
+            <div class="detail-box">
+              <h5>
+                HEALTH
+              </h5>
+              <p>
+                At Empower South Sudan, we focus on improving health outcomes for youth, women, and children through comprehensive healthcare services. Our programs include primary healthcare, HIV/AIDS prevention and treatment, family planning, and reproductive health services. We work closely with the Ministry of Health to address emerging health challenges and implement innovative digital health solutions.
+              </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="box ">
-              
-              <div class="detail-box">
-                <h5>
-                  LIVELIHOODS AND ECONOMIC DEVELOPMENT
-                </h5>
-                <p>
-                  Empower’ s 
-                  Livelihoods and economic development programs are designed to help 
-                  individuals create and achieve sound livelihoods and economic future for 
-                  themselves and their families. Our support focuses on increasing 
-                  participants’ productivity, employment, and household incomes through 
-                  farming, cash transfers, skills training, entrepreneurship, and other socio
-                  economic activities. Our cross-cutting capabilities in livelihood and economic 
-                  strengthening include:
-                  <ul>
-                    <li>Employment and Entrepreneurship</li>
-                    <li>Financial inclusion </li>
-                    <li>Livelihoods and economic strengthening </li>
-                    <li>Agriculture and food systems development</li>
-                    <li>Livelihoods and PLHIV and other marginalized groups</li>
-                  </ul> 
-                </p>
-                <a href="#">
-                  Read More
-                </a>
-              </div>
+
+          <div class="box">
+            <div class="detail-box">
+              <h5>
+                LIVELIHOODS AND ECONOMIC DEVELOPMENT
+              </h5>
+              <p>
+                Our economic development programs empower individuals to build sustainable livelihoods through employment opportunities, entrepreneurship, and skills training. We focus on financial inclusion, agricultural development, and supporting marginalized groups to achieve economic independence and community development.
+              </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="box ">
-              
-              <div class="detail-box">
-                <h5>
-                  GENDER, EQUITY, PROTECTION AND SOCIAL INCLUSION
-                </h5>
-                <p>
-                  Empower SS understand that in South Sudan, adolescent girls, women and 
-youths are disproportionately affected and are at higher risk of experiencing 
-gender- based violence. Therefore, our gender, equity, protection, and social 
-inclusion programs help, and support individuals and communities to 
-prioritize and address both gender inequality issues and GBV, specifically 
-among AGYW and children living with HIV with programmatic focus on GBV 
-risk mitigation, response and prevention. 
-                </p>
-                <a href="#">
-                  Read More
-                </a>
-              </div>
+
+          <div class="box">
+            <div class="detail-box">
+              <h5>
+                GENDER, EQUITY, PROTECTION AND SOCIAL INCLUSION
+              </h5>
+              <p>
+                We address gender inequality and gender-based violence through comprehensive programs that support women, youth, and vulnerable groups. Our initiatives focus on risk mitigation, response, and prevention strategies, particularly for adolescent girls and young women living with HIV.
+              </p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="box ">
-              
-              <div class="detail-box">
-                <h5>
-                  NUTRITION
-                </h5>
-                <p>
-                  Good nutrition is essential for healthy growth and 
-                  development, particularly for pregnant and breastfeeding women and their 
-                  children. Empower SS designs and implement program strategies that 
-                  prevent and treat malnutrition and strengthen local nutrition security in 
-                  development and emergency contexts.
-                </p>
-                <a href="#">
-                  Read More
-                </a>
-                <h5>
-                  DATA ANALYSIS
-                </h5>
-                <p>
-                  At Empower SS high-quality data management and 
-analysis is central to our community engagement and local ownership 
-efforts. Our strategic information unit provide comprehensive biostatistics 
-and data sciences support services. Central to our data analysis is 
-community-led monitoring. And advocacy research. 
-                </p>
-                <a href="#">
-                  Read More
-                </a>
-              </div>
+
+          <div class="box">
+            <div class="detail-box">
+              <h5>
+                NUTRITION
+              </h5>
+              <p>
+                We implement nutrition programs that ensure healthy growth and development, with special focus on pregnant women, breastfeeding mothers, and children. Our strategies prevent malnutrition and strengthen local nutrition security in both development and emergency contexts.
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="detail-box">
+              <h5>
+                DATA ANALYSIS
+              </h5>
+              <p>
+                Our strategic information unit provides comprehensive data management and analysis services. We focus on community-led monitoring and advocacy research to ensure evidence-based decision making and program effectiveness.
+              </p>
             </div>
           </div>
         </div>
@@ -341,6 +454,29 @@ community-led monitoring. And advocacy research.
   <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize all content-hidden elements to be hidden
+      document.querySelectorAll('.content-hidden').forEach(function(element) {
+        element.style.display = 'none';
+      });
+    });
+
+    function toggleContent(button) {
+      const content = button.previousElementSibling.querySelector('.content-hidden');
+      const preview = button.previousElementSibling.querySelector('.content-preview');
+      
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block';
+        preview.style.display = 'none';
+        button.textContent = 'Show Less';
+      } else {
+        content.style.display = 'none';
+        preview.style.display = 'block';
+        button.textContent = 'Read More';
+      }
+    }
+  </script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
